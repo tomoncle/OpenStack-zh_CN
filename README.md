@@ -49,8 +49,8 @@
   
 * 位置2: `/usr/lib/python2.7/dist-packages/cinder/i18n.py` 改为:
   ```
-  +27 _translators = i18n.TranslatorFactory(domain=DOMAIN, localedir='locale')
-  +36 def translate(value, user_locale='zh_CN'):
+  +27 : _translators = i18n.TranslatorFactory(domain=DOMAIN, localedir='locale')
+  +36 : def translate(value, user_locale='zh_CN'):
   ```
 
 ##### 3.生成翻译文件: 
