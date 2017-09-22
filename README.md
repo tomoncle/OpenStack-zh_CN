@@ -10,7 +10,7 @@
 * [OpenStack Orchestration (code-name Heat)](https://github.com/openstack/heat): 流程服务
 * [OpenStack Database (code-name Trove)](https://github.com/openstack/trove): 数据库服务
 
-## cinder
+## [OpenStack Block Storage (code-name Cinder)](https://github.com/openstack/cinder): 块设备存储服务
 
 ### `Ubuntu-14.04`
 
@@ -20,27 +20,27 @@
 >   `language-pack-zh-hans-base_1%3a14.04+20160720_all.deb`
 
 * `apt-get` 直接安装：
- ```bash
- $ sudo apt-get install language-pack-zh-hans language-pack-zh-hans-base
- ``` 
+  ```bash
+  $ sudo apt-get install language-pack-zh-hans language-pack-zh-hans-base
+  ``` 
 
 * `dpkg` 安装：
- ```bash
- $ dpkg -i language-pack-zh-hans*
- ```
+  ```bash
+  $ dpkg -i language-pack-zh-hans*
+  ```
 
 * 环境变量设置 : 
- ```bash
- $ export LANG=zh_CN.UTF-8
- ```
+  ```bash
+  $ export LANG=zh_CN.UTF-8
+  ```
 
 * 查看依赖语言包：安装完查看`/usr/share/locale-langpack`是否存在`zh_CN`:
- ```bash
- $ ls /usr/share/locale-langpack
- en  en_AU  en@boldquot  en_CA  en_GB  en_NZ  en@quot  en@shaw  en_US  en_US@piglatin  zh  zh_CN
- ```
+  ```bash 
+  $ ls /usr/share/locale-langpack
+  en  en_AU  en@boldquot  en_CA  en_GB  en_NZ  en@quot  en@shaw  en_US  en_US@piglatin  zh  zh_CN
+  ```
 
-##### 源码修改: 
+##### 2.源码修改: 
 * 位置1: `/usr/lib/python2.7/dist-packages/cinder/api/openstack/wsgi.py`　改为:
   ```bash
   +1322 : i18n.translate(explanation, locale) > i18n.translate(explanation, 'zh_CN')
@@ -49,11 +49,11 @@
   
 * 位置2: `/usr/lib/python2.7/dist-packages/cinder/i18n.py` 改为:
   ```
-  +27 _translators = i18n.TranslatorFactory(domain=DOMAIN, localedir='locale')
-  +36 def translate(value, user_locale='zh_CN'):
+  +27 : _translators = i18n.TranslatorFactory(domain=DOMAIN, localedir='locale')
+  +36 : def translate(value, user_locale='zh_CN'):
   ```
 
-##### 生成翻译文件: 
+##### 3.生成翻译文件: 
 > 将翻译好的 [`cinder.po`](https://github.com/openstack/cinder/blob/master/cinder/locale/zh_CN/LC_MESSAGES/cinder.po) 文件生成 `cinder.mo` 文件
 * 生成.mo文件命令：`msgfmt -o cinder.mo cinder.po` 
 * cinder.mo文件存放位置：
@@ -62,9 +62,9 @@
 
 * 3.重启api服务: `service cinder-api restart`
 
-##### 测试：
+##### 4.测试：
 * 编辑`/usr/lib/python2.7/dist-packages/cinder/i18n.py`：添加打印测试：
- ```python
- print _('Resource could not be found.')
- ```
+  ```python
+  print _('Resource could not be found.')
+  ```
 * 执行命令：`$ python i18n.py`
