@@ -15,19 +15,14 @@
 ### `Ubuntu-14.04`
 
 ##### 1.系统默认语言改为：`zh_CN.UTF-8`
-> dpkg依赖包：
->   `language-pack-zh-hans_1%3a14.04+20160720_all.deb`
->   `language-pack-zh-hans-base_1%3a14.04+20160720_all.deb`
-
 * `apt-get` 直接安装：
   ```bash
   $ sudo apt-get install language-pack-zh-hans language-pack-zh-hans-base
   ``` 
 
-* `dpkg` 安装：
-  ```bash
-  $ dpkg -i language-pack-zh-hans*
-  ```
+* 或 `dpkg` 安装：
+  * 下载安装包：[language-pack-zh-hans-base](https://github.com/tomoncle/OpenStack-zh_CN/raw/master/packages/language-pack-zh-hans-base_1%253a14.04%2B20160720_all.deb), [language-pack-zh-hans](https://github.com/tomoncle/OpenStack-zh_CN/raw/master/packages/language-pack-zh-hans_1%253a14.04%2B20160720_all.deb)
+  * 安装 : `$ dpkg -i language-pack-zh-hans*`
 
 * 环境变量设置 : 
   ```bash
