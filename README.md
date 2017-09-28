@@ -10,10 +10,9 @@
 * [OpenStack Orchestration (code-name Heat)](https://github.com/openstack/heat): 流程服务
 * [OpenStack Database (code-name Trove)](https://github.com/openstack/trove): 数据库服务
 
-## [OpenStack Block Storage (code-name Cinder)](https://github.com/openstack/cinder): 块设备存储服务
 
-### `Ubuntu-14.04`
-
+## 准备工作：
+###### `Ubuntu-14.04`
 ##### 1.系统默认语言改为：`zh_CN.UTF-8`
 * `apt-get` 直接安装：
   ```bash
@@ -34,36 +33,35 @@
   $ ls /usr/share/locale-langpack
   en  en_AU  en@boldquot  en_CA  en_GB  en_NZ  en@quot  en@shaw  en_US  en_US@piglatin  zh  zh_CN
   ```
+* 生成.mo文件命令：`msgfmt -o cinder.mo cinder.po` 
 
-##### 2.源码修改: 
-* 位置1: `/usr/lib/python2.7/dist-packages/cinder/api/openstack/wsgi.py`　改为:
-  ```bash
-  +1322 : i18n.translate(explanation, locale) > i18n.translate(explanation, 'zh_CN')
-  +1385 : i18n.translate(msg, locale) > i18n.translate(msg, 'zh_CN')
+---
+## [OpenStack Block Storage (code-name Cinder)](https://github.com/openstack/cinder): 块设备存储服务
+* 1.在目录`/usr/lib/python2.7/dist-packages/cinder/locale/zh_CN/LC_MESSAGES`下生成`cinder.mo`文件
+* 2.编辑`/usr/lib/python2.7/dist-packages/nova/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` ,要修改的部分如下:
+  ``` python
+  # The primary translation function using the well-known name "_"
+  # _ = _translators.primary
+  import gettext
+
+  locale_dir = '/usr/lib/python2.7/dist-packages/cinder/locale/'
+  gettext.install(DOMAIN, locale_dir)
+  zh_trans = gettext.translation(DOMAIN, locale_dir, languages=['zh_CN'])
+  zh_trans.install()
+  _ = _
+  
+  # Translators for log levels.
+  #
   ```
   
-* 位置2: `/usr/lib/python2.7/dist-packages/cinder/i18n.py` 改为:
-  ```
-  +27 : _translators = i18n.TranslatorFactory(domain=DOMAIN, localedir='locale')
-  +36 : def translate(value, user_locale='zh_CN'):
-  ```
-
-##### 3.生成翻译文件: 
-> 将翻译好的 [`cinder.po`](https://github.com/openstack/cinder/blob/master/cinder/locale/zh_CN/LC_MESSAGES/cinder.po) 文件生成 `cinder.mo` 文件
-* 生成.mo文件命令：`msgfmt -o cinder.mo cinder.po` 
-* cinder.mo文件存放位置：
-  * 1.拷贝cinder.mo 到`/usr/lib/python2.7/dist-packages/cinder/locale/zh_CN/LC_MESSAGES/`
-  * 2.拷贝cinder.mo 到`/usr/share/locale-langpack/zh_CN/LC_MESSAGES/`
-
-* 3.重启api服务: `service cinder-api restart`
-
-##### 4.测试：
-* 编辑`/usr/lib/python2.7/dist-packages/cinder/i18n.py`：添加打印测试：
+* 3.编辑`/usr/lib/python2.7/dist-packages/cinder/api/openstack/wsgi.py`,在文件头部加入：
   ```python
-  print _('Resource could not be found.')
+  import sys
+  reload(sys)
+  sys.setdefaultencoding('utf8')
   ```
-* 执行命令：`$ python i18n.py`
 
+* 4.重启api服务: `service cinder-api restart`
 
 ---
 ## [OpenStack Compute (code-name Nova)](https://github.com/openstack/nova): 计算服务
