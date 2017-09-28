@@ -91,4 +91,17 @@
 * 4.重启nova-api服务：`$ service nova-api restart`
 
 ---
-## 
+## [OpenStack Image Service (code-name Glance)](https://github.com/openstack/glance): 镜像文件服务
+* `/usr/lib/python2.7/dist-packages/glance/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` 
+
+---
+## [OpenStack Object Storage (code-name Swift)](https://github.com/openstack/swift): 对象存储服务
+* `/usr/lib/python2.7/dist-packages/swift/__init__.py`,重写`gettext_()`方法
+
+---
+## [OpenStack Networking (code-name Neutron)](https://github.com/openstack/neutron): 网络服务
+* 
+
+---
+## [OpenStack Identity (code-name Keystone)](https://github.com/openstack/keystone): 认证服务
+* `/usr/lib/python2.7/dist-packages/keystone/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` 
