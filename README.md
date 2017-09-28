@@ -63,3 +63,32 @@
   print _('Resource could not be found.')
   ```
 * 执行命令：`$ python i18n.py`
+
+
+---
+## [OpenStack Compute (code-name Nova)](https://github.com/openstack/nova): 计算服务
+* 1.在目录`/usr/lib/python2.7/dist-packages/nova/locale/zh_CN/LC_MESSAGES`下生成`nova.mo`文件
+* 2.编辑`/usr/lib/python2.7/dist-packages/nova/exception.py`文件，
+  * 2.1.添加以下代码在`class ConvertedException(...)`以上部分．
+    ```python
+    import gettext
+
+    locale_dir = '/usr/lib/python2.7/dist-packages/nova/locale/'
+    gettext.install('nova', locale_dir)
+    zh_trans = gettext.translation('nova', locale_dir, languages=['zh_CN'])
+    zh_trans.install()
+    ```
+  * 2.2.修改第34行：
+    ```python
+    from nova.i18n import _, _LE  # 改为: from nova.i18n import _LE
+    ```
+* 3.编辑`/usr/lib/python2.7/dist-packages/nova/api/openstack/__init__.py`,在文件头部加入：
+  ```python
+  import sys
+  reload(sys)
+  sys.setdefaultencoding('utf8')
+  ```
+* 4.重启nova-api服务：`$ service nova-api restart`
+
+---
+## 
