@@ -68,7 +68,7 @@
 ---
 ## [OpenStack Compute (code-name Nova)](https://github.com/openstack/nova): 计算服务
 * 1.在目录`/usr/lib/python2.7/dist-packages/nova/locale/zh_CN/LC_MESSAGES`下生成`nova.mo`文件
-* 2.编辑`/usr/lib/python2.7/dist-packages/nova/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` :
+* 2.编辑`/usr/lib/python2.7/dist-packages/nova/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` ,要修改的部分如下:
   ``` python
   # The primary translation function using the well-known name "_"
   # _ = _translators.primary
@@ -79,7 +79,9 @@
   zh_trans = gettext.translation(DOMAIN, locale_dir, languages=['zh_CN'])
   zh_trans.install()
   _ = _
-
+  
+  # Translators for log levels.
+  #
   ```
   
 * 3.编辑`/usr/lib/python2.7/dist-packages/nova/api/openstack/__init__.py`,在文件头部加入：
