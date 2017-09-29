@@ -33,6 +33,7 @@
   $ ls /usr/share/locale-langpack
   en  en_AU  en@boldquot  en_CA  en_GB  en_NZ  en@quot  en@shaw  en_US  en_US@piglatin  zh  zh_CN
   ```
+* 安装gettext：`$ apt install gettext`
 * 生成.mo文件命令：`msgfmt -o cinder.mo cinder.po` 
 
 ---
@@ -72,7 +73,7 @@
   # _ = _translators.primary
   import gettext
 
-  locale_dir = '/usr/lib/python2.7/dist-packages/cinder/locale/'
+  locale_dir = '/usr/lib/python2.7/dist-packages/nova/locale/'
   gettext.install(DOMAIN, locale_dir)
   zh_trans = gettext.translation(DOMAIN, locale_dir, languages=['zh_CN'])
   zh_trans.install()
@@ -93,6 +94,8 @@
 ---
 ## [OpenStack Image Service (code-name Glance)](https://github.com/openstack/glance): 镜像文件服务
 * `/usr/lib/python2.7/dist-packages/glance/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` 
+* `/usr/lib/python2.7/dist-packages/glance/common/wsgi.py`，加入转码
+* `$ service glance-api restart`
 
 ---
 ## [OpenStack Object Storage (code-name Swift)](https://github.com/openstack/swift): 对象存储服务
