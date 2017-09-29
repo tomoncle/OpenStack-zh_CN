@@ -108,3 +108,5 @@
 ---
 ## [OpenStack Identity (code-name Keystone)](https://github.com/openstack/keystone): 认证服务
 * `/usr/lib/python2.7/dist-packages/keystone/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` 
+* `/usr/lib/python2.7/dist-packages/keystone/common/wsgi.py` ，加入转码
+* `$ service apache2 restart`
