@@ -39,7 +39,7 @@
 ---
 ## [OpenStack Block Storage (code-name Cinder)](https://github.com/openstack/cinder): 块设备存储服务
 * 1.在目录`/usr/lib/python2.7/dist-packages/cinder/locale/zh_CN/LC_MESSAGES`下生成`cinder.mo`文件
-* 2.编辑`/usr/lib/python2.7/dist-packages/nova/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` ,要修改的部分如下:
+* 2.编辑`/usr/lib/python2.7/dist-packages/cinder/i18n.py`文件,注释掉默认的 `_ = _translators.primary`,重写`"_"` ,要修改的部分如下:
   ``` python
   # The primary translation function using the well-known name "_"
   # _ = _translators.primary
