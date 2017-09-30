@@ -149,7 +149,7 @@ msgid ""
 msgstr "名称空间 %(namespace_name)s 中已存在名称为 %(name)s 的元数据标记。"
 
 msgid "A set of URLs to access the image file kept in external store"
-msgstr "用于访问外部存储器中保留的映像文件的 URL集合"
+msgstr "用于访问外部存储器中保留的镜像文件的 URL集合"
 
 msgid ""
 "AES key for encrypting store 'location' metadata. This includes, if used, "
@@ -179,16 +179,16 @@ msgid "Allowed values %s are invalid under given validators"
 msgstr "允许值 %s 在所给定的验证程序下无效"
 
 msgid "Amount of disk space (in GB) required to boot image."
-msgstr "引导映像所需的磁盘空间量（以 GB 计）。"
+msgstr "引导镜像所需的磁盘空间量（以 GB 计）。"
 
 msgid "Amount of ram (in MB) required to boot image."
-msgstr "引导映像所需的 ram 量（以 MB 计）。"
+msgstr "引导镜像所需的 ram 量（以 MB 计）。"
 
 msgid "An identifier for the image"
-msgstr "映像的标识"
+msgstr "镜像的标识"
 
 msgid "An identifier for the image member (tenantId)"
-msgstr "映像成员的标识 (tenantId)"
+msgstr "镜像成员的标识 (tenantId)"
 
 msgid "An identifier for the owner of this task"
 msgstr "此任务的所有者的标识"
@@ -198,7 +198,7 @@ msgstr "任务的标识"
 
 #, python-format
 msgid "An image with identifier %s already exists"
-msgstr "具有标识 %s 的映像已存在"
+msgstr "具有标识 %s 的镜像已存在"
 
 msgid "An object with the same identifier already exists."
 msgstr "具有同一标识的对象已存在。"
@@ -266,10 +266,10 @@ msgstr "尝试设置不可变属性的值"
 
 #, python-format
 msgid "Attempt to upload duplicate image: %s"
-msgstr "请尝试上载重复映像：%s"
+msgstr "请尝试上载重复镜像：%s"
 
 msgid "Attempted to update Location field for an image not in queued status."
-msgstr "已尝试更新处于未排队状态的映像的“位置”字段。"
+msgstr "已尝试更新处于未排队状态的镜像的“位置”字段。"
 
 #, python-format
 msgid "Attribute '%(property)s' is read-only."
@@ -288,10 +288,10 @@ msgid "Attribute '%s' is reserved."
 msgstr "属性“%s”已保留。"
 
 msgid "Attribute container_format can be only replaced for a queued image."
-msgstr "只能为已排队的映像替换属性 container_format。"
+msgstr "只能为已排队的镜像替换属性 container_format。"
 
 msgid "Attribute disk_format can be only replaced for a queued image."
-msgstr "只能为已排队的映像替换属性 disk_format。"
+msgstr "只能为已排队的镜像替换属性 disk_format。"
 
 msgid ""
 "Auth key for the user authenticating against the Swift authentication "
@@ -329,7 +329,7 @@ msgid "Badly formed credentials in Swift URI."
 msgstr "Swift URI 中凭证的格式不正确。"
 
 msgid "Base directory that the Image Cache uses."
-msgstr "映像高速缓存使用的基本目录。"
+msgstr "镜像高速缓存使用的基本目录。"
 
 #, python-format
 msgid "Blob %(name)s may not have multiple values"
@@ -352,7 +352,7 @@ msgstr "不能为负值"
 
 #, python-format
 msgid "Cannot convert image %(key)s '%(value)s' to an integer."
-msgstr "无法将映像 %(key)s“%(value)s”转换为整数。"
+msgstr "无法将镜像 %(key)s“%(value)s”转换为整数。"
 
 msgid "Cannot declare artifact property with reserved name 'metadata'"
 msgstr "不得使用保留名称“metadata”来声明工件属性"
@@ -375,7 +375,7 @@ msgid "Cannot specify 'min_size' explicitly"
 msgstr "无法显式指定“min_size”"
 
 msgid "Cannot upload to an unqueued image"
-msgstr "无法上载至未排队的映像"
+msgstr "无法上载至未排队的镜像"
 
 #, python-format
 msgid "Cannot use this parameter with the operator %(op)s"
@@ -386,7 +386,7 @@ msgstr "安全启动 API 服务器时要使用的证书文件。"
 
 #, python-format
 msgid "Checksum verification failed. Aborted caching of image '%s'."
-msgstr "校验和验证失败。已异常中止映像“%s”的高速缓存。"
+msgstr "校验和验证失败。已异常中止镜像“%s”的高速缓存。"
 
 msgid "Client disconnected before sending all data to backend"
 msgstr "客户端在发送所有数据到后端时断开了连接"
@@ -410,7 +410,7 @@ msgstr "Content-Type 必须是 application/octet-stream"
 
 #, python-format
 msgid "Corrupt image download for image %(image_id)s"
-msgstr "对于映像 %(image_id)s，映像下载已损坏"
+msgstr "对于镜像 %(image_id)s，镜像下载已损坏"
 
 #, python-format
 msgid "Could not bind to %(host)s:%(port)s after trying for 30 seconds"
@@ -441,7 +441,7 @@ msgstr "找不到任务 %s"
 
 #, python-format
 msgid "Could not update image: %s"
-msgstr "未能更新映像：%s"
+msgstr "未能更新镜像：%s"
 
 msgid "Custom validators list should contain tuples '(function, message)'"
 msgstr "定制验证程序列表应当包含元组“(function, message)”"
@@ -450,13 +450,13 @@ msgid "Data supplied was not valid."
 msgstr "提供的数据无效。"
 
 msgid "Date and time of image member creation"
-msgstr "创建映像成员的日期和时间"
+msgstr "创建镜像成员的日期和时间"
 
 msgid "Date and time of image registration (READ-ONLY)"
-msgstr "注册映像的日期和时间（只读）"
+msgstr "注册镜像的日期和时间（只读）"
 
 msgid "Date and time of last modification of image member"
-msgstr "最近一次修改映像成员的日期和时间"
+msgstr "最近一次修改镜像成员的日期和时间"
 
 msgid "Date and time of namespace creation (READ-ONLY)"
 msgstr "名称空间创建的日期和时间（只读）"
@@ -471,7 +471,7 @@ msgid "Date and time of tag creation (READ-ONLY)"
 msgstr "标记创建的日期和时间（只读）"
 
 msgid "Date and time of the last image modification (READ-ONLY)"
-msgstr "最近一次修改映像的日期和时间（只读）"
+msgstr "最近一次修改镜像的日期和时间（只读）"
 
 msgid "Date and time of the last namespace modification (READ-ONLY)"
 msgstr "最近一次修改名称空间的日期和时间（只读）"
@@ -505,11 +505,11 @@ msgstr "缺省值无效"
 
 #, python-format
 msgid "Denying attempt to upload image because it exceeds the quota: %s"
-msgstr "正在拒绝尝试上载映像，因为它超过配额：%s"
+msgstr "正在拒绝尝试上载镜像，因为它超过配额：%s"
 
 #, python-format
 msgid "Denying attempt to upload image larger than %d bytes."
-msgstr "正在拒绝尝试上载大小超过 %d 字节的映像。"
+msgstr "正在拒绝尝试上载大小超过 %d 字节的镜像。"
 
 msgid "Dependency relations cannot be mutable"
 msgstr "依赖关系不得可变"
@@ -527,7 +527,7 @@ msgid "Deploy the v2 OpenStack Registry API."
 msgstr "请部署 OpenStack Registry API V2。"
 
 msgid "Descriptive name for the image"
-msgstr "映像的描述性名称"
+msgstr "镜像的描述性名称"
 
 #, python-format
 msgid "Determining version of request: %(method)s %(path)s Accept: %(accept)s"
@@ -558,7 +558,7 @@ msgid "Encountered service with no \"type\": %s"
 msgstr "遇到不带任何“类型”的服务：%s"
 
 msgid "Error in store configuration. Adding images to store is disabled."
-msgstr "存储配置中出错。已禁止将映像添加至存储器。"
+msgstr "存储配置中出错。已禁止将镜像添加至存储器。"
 
 #, python-format
 msgid "External sources are not supported: '%s'"
@@ -566,23 +566,23 @@ msgstr "外部源不受支持：“%s”"
 
 #, python-format
 msgid "Failed to activate image. Got error: %s"
-msgstr "未能激活映像。发生错误：%s"
+msgstr "未能激活镜像。发生错误：%s"
 
 #, python-format
 msgid "Failed to add image metadata. Got error: %s"
-msgstr "未能添加映像元数据。发生错误：%s"
+msgstr "未能添加镜像元数据。发生错误：%s"
 
 #, python-format
 msgid "Failed to find image %(image_id)s to delete"
-msgstr "未能找到要删除的映像 %(image_id)s"
+msgstr "未能找到要删除的镜像 %(image_id)s"
 
 #, python-format
 msgid "Failed to find image to delete: %s"
-msgstr "未能找到要删除的映像：%s"
+msgstr "未能找到要删除的镜像：%s"
 
 #, python-format
 msgid "Failed to find image to update: %s"
-msgstr "找不到要更新的映像：%s"
+msgstr "找不到要更新的镜像：%s"
 
 #, python-format
 msgid "Failed to find resource type %(resourcetype)s to delete"
@@ -590,7 +590,7 @@ msgstr "找不到要删除的资源类型 %(resourcetype)s"
 
 #, python-format
 msgid "Failed to initialize the image cache database. Got error: %s"
-msgstr "未能初始化映像高速缓存数据库。发生错误：%s"
+msgstr "未能初始化镜像高速缓存数据库。发生错误：%s"
 
 #, python-format
 msgid "Failed to read %s from config"
@@ -598,11 +598,11 @@ msgstr "未能从配置读取 %s"
 
 #, python-format
 msgid "Failed to reserve image. Got error: %s"
-msgstr "未能保留映像。发生错误：%s"
+msgstr "未能保留镜像。发生错误：%s"
 
 #, python-format
 msgid "Failed to update image metadata. Got error: %s"
-msgstr "未能更新映像元数据。发生错误：%s"
+msgstr "未能更新镜像元数据。发生错误：%s"
 
 #, python-format
 msgid "Failed to upload image %s"
@@ -612,18 +612,18 @@ msgstr "上传镜像 %s失败"
 msgid ""
 "Failed to upload image data for image %(image_id)s due to HTTP error: "
 "%(error)s"
-msgstr "由于 HTTP 错误，未能上载映像 %(image_id)s 的映像数据：%(error)s"
+msgstr "由于 HTTP 错误，未能上载镜像 %(image_id)s 的镜像数据：%(error)s"
 
 #, python-format
 msgid ""
 "Failed to upload image data for image %(image_id)s due to internal error: "
 "%(error)s"
-msgstr "由于内部错误，未能上载映像 %(image_id)s 的映像数据：%(error)s"
+msgstr "由于内部错误，未能上载镜像 %(image_id)s 的镜像数据：%(error)s"
 
 msgid ""
 "File based imports are not allowed. Please use a non-local source of image "
 "data."
-msgstr "不允许基于文件的导入。请使用映像数据的非本地源。"
+msgstr "不允许基于文件的导入。请使用镜像数据的非本地源。"
 
 msgid "File too large"
 msgstr "文件太大"
@@ -633,21 +633,21 @@ msgstr "文件太小"
 
 #, python-format
 msgid "Forbidden to delete a %s image."
-msgstr "已禁止对映像%s进行删除。"
+msgstr "已禁止对镜像%s进行删除。"
 
 #, python-format
 msgid "Forbidden to delete image: %s"
-msgstr "已禁止删除映像：%s"
+msgstr "已禁止删除镜像：%s"
 
 msgid "Forbidden to reserve image."
-msgstr "已禁止保留映像。"
+msgstr "已禁止保留镜像。"
 
 msgid "Forbidden to update deleted image."
-msgstr "已禁止更新删除的映像。"
+msgstr "已禁止更新删除的镜像。"
 
 #, python-format
 msgid "Forbidden to update image: %s"
-msgstr "已禁止更新映像：%s"
+msgstr "已禁止更新镜像：%s"
 
 #, python-format
 msgid "Forbidden upload attempt: %s"
@@ -703,18 +703,18 @@ msgstr ""
 "为 False。"
 
 msgid "If true, image will not be deletable."
-msgstr "如果为 true，那么映像将不可删除。"
+msgstr "如果为 true，那么镜像将不可删除。"
 
 msgid "If true, namespace will not be deletable."
 msgstr "如果为 true，那么名称空间将不可删除。"
 
 #, python-format
 msgid "Image %(id)s could not be deleted because it is in use: %(exc)s"
-msgstr "映像 %(id)s 未能删除，因为它正在使用中：%(exc)s"
+msgstr "镜像 %(id)s 未能删除，因为它正在使用中：%(exc)s"
 
 #, python-format
 msgid "Image %(id)s not found"
-msgstr "找不到映像 %(id)s"
+msgstr "找不到镜像 %(id)s"
 
 #, python-format
 msgid ""
@@ -724,76 +724,76 @@ msgstr "镜像%(image_id)s上传后无法找到。镜像在上传过程中可能
 
 #, python-format
 msgid "Image %(image_id)s is protected and cannot be deleted."
-msgstr "映像 %(image_id)s 受保护，无法删除。"
+msgstr "镜像 %(image_id)s 受保护，无法删除。"
 
 #, python-format
 msgid ""
 "Image %s could not be found after upload. The image may have been deleted "
 "during the upload, cleaning up the chunks uploaded."
 msgstr ""
-"在上载之后，找不到映像 %s。可能已在上载期间删除该映像，正在清除已上载的区块。"
+"在上载之后，找不到镜像 %s。可能已在上载期间删除该镜像，正在清除已上载的区块。"
 
 #, python-format
 msgid "Image %s is deactivated"
-msgstr "映像 %s 已取消激活"
+msgstr "镜像 %s 已取消激活"
 
 #, python-format
 msgid "Image %s is not active"
-msgstr "映像 %s 处于不活动状态"
+msgstr "镜像 %s 处于不活动状态"
 
 #, python-format
 msgid "Image %s not found."
-msgstr "找不到映像 %s "
+msgstr "找不到镜像 %s "
 
 #, python-format
 msgid "Image exceeds the storage quota: %s"
 msgstr "镜像超出存储限额： %s"
 
 msgid "Image id is required."
-msgstr "需要映像标识。"
+msgstr "需要镜像标识。"
 
 msgid "Image is protected"
-msgstr "映像受保护"
+msgstr "镜像受保护"
 
 #, python-format
 msgid "Image member limit exceeded for image %(id)s: %(e)s:"
-msgstr "对于映像 %(id)s，超过映像成员限制：%(e)s："
+msgstr "对于镜像 %(id)s，超过镜像成员限制：%(e)s："
 
 #, python-format
 msgid "Image name too long: %d"
-msgstr "映像名称太长：%d"
+msgstr "镜像名称太长：%d"
 
 msgid "Image operation conflicts"
-msgstr "映像操作发生冲突"
+msgstr "镜像操作发生冲突"
 
 #, python-format
 msgid ""
 "Image status transition from %(cur_status)s to %(new_status)s is not allowed"
-msgstr "不允许映像状态从 %(cur_status)s 转变为 %(new_status)s"
+msgstr "不允许镜像状态从 %(cur_status)s 转变为 %(new_status)s"
 
 #, python-format
 msgid "Image storage media is full: %s"
-msgstr "映像存储介质已满：%s"
+msgstr "镜像存储介质已满：%s"
 
 #, python-format
 msgid "Image tag limit exceeded for image %(id)s: %(e)s:"
-msgstr "对于映像 %(id)s，超过映像标记限制：%(e)s："
+msgstr "对于镜像 %(id)s，超过镜像标记限制：%(e)s："
 
 #, python-format
 msgid "Image upload problem: %s"
-msgstr "发生映像上载问题：%s"
+msgstr "发生镜像上载问题：%s"
 
 #, python-format
 msgid "Image with identifier %s already exists!"
-msgstr "具有标识 %s 的映像已存在！"
+msgstr "具有标识 %s 的镜像已存在！"
 
 #, python-format
 msgid "Image with identifier %s has been deleted."
-msgstr "已删除具有标识 %s 的映像。"
+msgstr "已删除具有标识 %s 的镜像。"
 
 #, python-format
 msgid "Image with identifier %s not found"
-msgstr "找不到具有标识 %s 的映像"
+msgstr "找不到具有标识 %s 的镜像"
 
 #, python-format
 msgid ""
@@ -811,7 +811,7 @@ msgstr "输入没有包含“%(key)s”字段"
 
 #, python-format
 msgid "Insufficient permissions on image storage media: %s"
-msgstr "对映像存储介质的许可权不足：%s"
+msgstr "对镜像存储介质的许可权不足：%s"
 
 #, python-format
 msgid "Invalid JSON pointer for this resource: '/%s'"
@@ -825,7 +825,7 @@ msgstr "属性保护文件中的配置无效。"
 
 #, python-format
 msgid "Invalid container format '%s' for image."
-msgstr "对于映像，容器格式“%s”无效。"
+msgstr "对于镜像，容器格式“%s”无效。"
 
 #, python-format
 msgid "Invalid content type %(content_type)s"
@@ -839,10 +839,10 @@ msgstr "指定了无效的字典属性类型"
 
 #, python-format
 msgid "Invalid disk format '%s' for image."
-msgstr "对于映像，磁盘格式“%s”无效。"
+msgstr "对于镜像，磁盘格式“%s”无效。"
 
 msgid "Invalid image id format"
-msgstr "映像标识格式无效"
+msgstr "镜像标识格式无效"
 
 msgid "Invalid item type specification"
 msgstr "指定了无效的项类型"
@@ -874,7 +874,7 @@ msgid "Invalid marker format"
 msgstr "标记符格式无效"
 
 msgid "Invalid marker. Image could not be found."
-msgstr "标记符无效。找不到映像。"
+msgstr "标记符无效。找不到镜像。"
 
 #, python-format
 msgid "Invalid membership association: %s"
@@ -1000,7 +1000,7 @@ msgid ""
 msgstr "JSON 路径应当以“/”开头，不以“/”结尾，不允许存在两个后续的“/”。"
 
 msgid "Legacy image was not found"
-msgstr "找不到旧映像"
+msgstr "找不到旧镜像"
 
 msgid "Length  is greater than maximum"
 msgstr "长度大于最大值"
@@ -1012,7 +1012,7 @@ msgid "List definitions may hot have defaults"
 msgstr "列表定义可能没有缺省值"
 
 msgid "List of strings related to the image"
-msgstr "与映像相关的字符串的列表"
+msgstr "与镜像相关的字符串的列表"
 
 msgid "List size is greater than maximum"
 msgstr "列表大小大于最大值"
@@ -1044,22 +1044,22 @@ msgstr ""
 msgid ""
 "Maximum number of image members per image. Negative values evaluate to "
 "unlimited."
-msgstr "每个映像的最大映像成员数。负值视为无限。"
+msgstr "每个镜像的最大镜像成员数。负值视为无限。"
 
 msgid ""
 "Maximum number of locations allowed on an image. Negative values evaluate to "
 "unlimited."
-msgstr "映像上允许的最大位置数。负值视为无限。"
+msgstr "镜像上允许的最大位置数。负值视为无限。"
 
 msgid ""
 "Maximum number of properties allowed on an image. Negative values evaluate "
 "to unlimited."
-msgstr "映像上允许的最大属性数。负值视为无限。"
+msgstr "镜像上允许的最大属性数。负值视为无限。"
 
 msgid ""
 "Maximum number of tags allowed on an image. Negative values evaluate to "
 "unlimited."
-msgstr "映像上允许的最大标记数。负值视为无限。"
+msgstr "镜像上允许的最大标记数。负值视为无限。"
 
 msgid "Maximum permissible number of items that could be returned by a request"
 msgstr "可由请求返回的最大允许项数"
@@ -1073,13 +1073,13 @@ msgid ""
 "bytes (1 TB).WARNING: this value should only be increased after careful "
 "consideration and must be set to a value under 8 EB (9223372036854775808)."
 msgstr ""
-"用户可上载的最大映像大小（以字节计）。缺省为 1099511627776 字节 (1 TB)。警"
+"用户可上载的最大镜像大小（以字节计）。缺省为 1099511627776 字节 (1 TB)。警"
 "告：此值仅应该在仔细考虑之后增大并且必须设置为小于 8 EB "
 "(9223372036854775808) 的值。"
 
 #, python-format
 msgid "Member %(member_id)s is duplicated for image %(image_id)s"
-msgstr "对于映像 %(image_id)s，已复制成员 %(member_id)s"
+msgstr "对于镜像 %(image_id)s，已复制成员 %(member_id)s"
 
 msgid "Member can't be empty"
 msgstr "成员不能为空"
@@ -1157,7 +1157,7 @@ msgid ""
 "Multiple 'image' service matches for region %(region)s. This generally means "
 "that a region is required and you have not supplied one."
 msgstr ""
-"对于区域 %(region)s，存在多个“映像”服务匹配项。这通常意味着需要区域并且尚未提"
+"对于区域 %(region)s，存在多个“镜像”服务匹配项。这通常意味着需要区域并且尚未提"
 "供一个区域。"
 
 msgid "Name of the paste configuration file."
@@ -1167,18 +1167,18 @@ msgid "No authenticated user"
 msgstr "不存在任何已认证的用户"
 
 msgid "No image data could be found"
-msgstr "找不到任何映像数据"
+msgstr "找不到任何镜像数据"
 
 #, python-format
 msgid "No image found with ID %s"
-msgstr "找不到任何具有标识 %s 的映像"
+msgstr "找不到任何具有标识 %s 的镜像"
 
 #, python-format
 msgid "No location found with ID %(loc)s from image %(img)s"
-msgstr "在映像 %(img)s 中找不到标识为 %(loc)s 的位置"
+msgstr "在镜像 %(img)s 中找不到标识为 %(loc)s 的位置"
 
 msgid "No permission to share that image"
-msgstr "不存在任何用于共享该映像的许可权"
+msgstr "不存在任何用于共享该镜像的许可权"
 
 #, python-format
 msgid "No plugin for '%(name)s' has been loaded"
@@ -1189,35 +1189,35 @@ msgstr "不是有效的值类型"
 
 #, python-format
 msgid "Not allowed to create members for image %s."
-msgstr "不允许为映像 %s 创建成员。"
+msgstr "不允许为镜像 %s 创建成员。"
 
 #, python-format
 msgid "Not allowed to deactivate image in status '%s'"
-msgstr "不允许取消激活状态为“%s”的映像"
+msgstr "不允许取消激活状态为“%s”的镜像"
 
 #, python-format
 msgid "Not allowed to delete members for image %s."
-msgstr "不允许为映像 %s 删除成员。"
+msgstr "不允许为镜像 %s 删除成员。"
 
 #, python-format
 msgid "Not allowed to delete tags for image %s."
-msgstr "不允许为映像 %s 删除标记。"
+msgstr "不允许为镜像 %s 删除标记。"
 
 #, python-format
 msgid "Not allowed to list members for image %s."
-msgstr "不允许为映像 %s 列示成员。"
+msgstr "不允许为镜像 %s 列示成员。"
 
 #, python-format
 msgid "Not allowed to reactivate image in status '%s'"
-msgstr "不允许重新激活状态为“%s”的映像"
+msgstr "不允许重新激活状态为“%s”的镜像"
 
 #, python-format
 msgid "Not allowed to update members for image %s."
-msgstr "不允许为映像 %s 更新成员。"
+msgstr "不允许为镜像 %s 更新成员。"
 
 #, python-format
 msgid "Not allowed to update tags for image %s."
-msgstr "不允许为映像 %s 更新标记。"
+msgstr "不允许为镜像 %s 更新标记。"
 
 #, python-format
 msgid "Not allowed to upload image data for image %(image_id)s: %(error)s"
@@ -1258,7 +1258,7 @@ msgid "Owner must be specified to create a tag."
 msgstr "必须指定所有者，才能创建标记。"
 
 msgid "Owner of the image"
-msgstr "映像的所有者"
+msgstr "镜像的所有者"
 
 msgid "Owner of the namespace."
 msgstr "名称空间的所有者。"
@@ -1382,7 +1382,7 @@ msgid ""
 "Provided image size must match the stored image size. (provided size: "
 "%(ps)d, stored size: %(ss)d)"
 msgstr ""
-"提供的映像大小必须与存储的映像大小匹配。（提供的大小为 %(ps)d，存储的大小为 "
+"提供的镜像大小必须与存储的镜像大小匹配。（提供的大小为 %(ps)d，存储的大小为 "
 "%(ss)d）"
 
 #, python-format
@@ -1401,7 +1401,7 @@ msgid "Provides a user friendly description of the namespace."
 msgstr "提供名称空间的用户友好描述。"
 
 msgid "Public images do not have members."
-msgstr "公共映像没有成员。"
+msgstr "公共镜像没有成员。"
 
 msgid ""
 "Public url to use for versions endpoint. The default is None, which will use "
@@ -1480,7 +1480,7 @@ msgstr ""
 "出。当已指定时，不退出，并按 wakeup_time 时间间隔（如配置中所指定）运行擦除。"
 
 msgid "Scope of image accessibility"
-msgstr "映像辅助功能选项的作用域"
+msgstr "镜像辅助功能选项的作用域"
 
 msgid "Scope of namespace accessibility."
 msgstr "名称空间辅助功能选项的作用域。"
@@ -1511,7 +1511,7 @@ msgid "Show level %(shl)s is not supported in this operation"
 msgstr "显示级别 %(shl)s 在此操作中不受支持"
 
 msgid "Size of image file in bytes (READ-ONLY)"
-msgstr "映像文件的大小，以字节计（只读）"
+msgstr "镜像文件的大小，以字节计（只读）"
 
 msgid ""
 "Some resource types allow more than one key / value pair per instance.  For "
@@ -1520,7 +1520,7 @@ msgid ""
 "property allows a namespace target to remove the ambiguity."
 msgstr ""
 "一些资源类型允许每个实例具有多个“键/值”对。例如，Cinder 允许卷上的用户元数据"
-"和映像元数据。仅映像属性元数据是通过 Nova（调度或驱动程序）求值。此属性允许名"
+"和镜像元数据。仅镜像属性元数据是通过 Nova（调度或驱动程序）求值。此属性允许名"
 "称空间目标除去不确定性。"
 
 msgid "Sort direction supplied was not valid."
@@ -1547,7 +1547,7 @@ msgid "Status not specified"
 msgstr "未指定状态"
 
 msgid "Status of the image (READ-ONLY)"
-msgstr "映像的状态（只读）"
+msgstr "镜像的状态（只读）"
 
 #, python-format
 msgid "Status transition from %(cur_status)s to %(new_status)s is not allowed"
@@ -1570,14 +1570,14 @@ msgid ""
 "Supplied %(attr)s (%(supplied)s) and %(attr)s generated from uploaded image "
 "(%(actual)s) did not match. Setting image status to 'killed'."
 msgstr ""
-"提供的 %(attr)s (%(supplied)s) 与所上载映像 (%(actual)s) 生成的 %(attr)s 不匹"
-"配。正在将映像状态设置为“已终止”。"
+"提供的 %(attr)s (%(supplied)s) 与所上载镜像 (%(actual)s) 生成的 %(attr)s 不匹"
+"配。正在将镜像状态设置为“已终止”。"
 
 msgid "Supported values for the 'container_format' image attribute"
-msgstr "“container_format”映像属性支持的值"
+msgstr "“container_format”镜像属性支持的值"
 
 msgid "Supported values for the 'disk_format' image attribute"
-msgstr "“disk_format”映像属性支持的值"
+msgstr "“disk_format”镜像属性支持的值"
 
 #, python-format
 msgid "Suppressed respawn as %(serv)s was %(rsn)s."
@@ -1612,7 +1612,7 @@ msgid ""
 "The Image %(image_id)s object being created by this task %(task_id)s, is no "
 "longer in valid status for further processing."
 msgstr ""
-"此任务 %(task_id)s 正在创建的映像 %(image_id)s 对象不再处于有效状态，无法进一"
+"此任务 %(task_id)s 正在创建的镜像 %(image_id)s 对象不再处于有效状态，无法进一"
 "步处理。"
 
 msgid "The Store URI was malformed."
@@ -1645,7 +1645,7 @@ msgstr "用于在执行删除之前延迟的时间量（以秒计）。"
 msgid ""
 "The amount of time to let an image remain in the cache without being "
 "accessed."
-msgstr "用于让映像保留在高速缓存中但不对其进行访问的时间量。"
+msgstr "用于让镜像保留在高速缓存中但不对其进行访问的时间量。"
 
 msgid ""
 "The backlog value that will be used when creating the TCP listener socket."
@@ -1668,11 +1668,11 @@ msgid ""
 "user_xattr option to the appropriate line for the device housing the cache "
 "directory."
 msgstr ""
-"存放映像高速缓存目录 %(image_cache_dir)s 的设备不支持 xattr。您可能需要编辑 "
+"存放镜像高速缓存目录 %(image_cache_dir)s 的设备不支持 xattr。您可能需要编辑 "
 "fstab 并将 user_xattr 选项添加至存放该高速缓存目录的设备的相应行。"
 
 msgid "The driver to use for image cache management."
-msgstr "要用于映像高速缓存管理的驱动程序。"
+msgstr "要用于镜像高速缓存管理的驱动程序。"
 
 #, python-format
 msgid ""
@@ -1690,12 +1690,12 @@ msgid ""
 "find it. This indicates that we do not have permissions to see all the "
 "images on the slave server."
 msgstr ""
-"映像 %s 已存在于从属服务器上，但是我们针对它进行的检查找不到该映像。这指示我"
-"们没有许可权来查看从属服务器上的所有映像。"
+"镜像 %s 已存在于从属服务器上，但是我们针对它进行的检查找不到该镜像。这指示我"
+"们没有许可权来查看从属服务器上的所有镜像。"
 
 #, python-format
 msgid "The incoming image is too large: %s"
-msgstr "引入的映像太大：%s"
+msgstr "引入的镜像太大：%s"
 
 #, python-format
 msgid "The key file you specified %s does not exist"
@@ -1706,14 +1706,14 @@ msgid ""
 "The limit has been exceeded on the number of allowed image locations. "
 "Attempted: %(attempted)s, Maximum: %(maximum)s"
 msgstr ""
-"已超过关于允许的映像位置数的限制。已尝试：%(attempted)s，最大值：%(maximum)s"
+"已超过关于允许的镜像位置数的限制。已尝试：%(attempted)s，最大值：%(maximum)s"
 
 #, python-format
 msgid ""
 "The limit has been exceeded on the number of allowed image members for this "
 "image. Attempted: %(attempted)s, Maximum: %(maximum)s"
 msgstr ""
-"已超过关于允许的映像成员数（对于此映像）的限制。已尝试：%(attempted)s，最大"
+"已超过关于允许的镜像成员数（对于此镜像）的限制。已尝试：%(attempted)s，最大"
 "值：%(maximum)s"
 
 #, python-format
@@ -1721,20 +1721,20 @@ msgid ""
 "The limit has been exceeded on the number of allowed image properties. "
 "Attempted: %(attempted)s, Maximum: %(maximum)s"
 msgstr ""
-"已超过关于允许的映像属性数的限制。已尝试：%(attempted)s，最大值：%(maximum)s"
+"已超过关于允许的镜像属性数的限制。已尝试：%(attempted)s，最大值：%(maximum)s"
 
 #, python-format
 msgid ""
 "The limit has been exceeded on the number of allowed image properties. "
 "Attempted: %(num)s, Maximum: %(quota)s"
-msgstr "已超过关于允许的映像属性数的限制。已尝试：%(num)s，最大值：%(quota)s"
+msgstr "已超过关于允许的镜像属性数的限制。已尝试：%(num)s，最大值：%(quota)s"
 
 #, python-format
 msgid ""
 "The limit has been exceeded on the number of allowed image tags. Attempted: "
 "%(attempted)s, Maximum: %(maximum)s"
 msgstr ""
-"已超过关于允许的映像标记数的限制。已尝试：%(attempted)s，最大值：%(maximum)s"
+"已超过关于允许的镜像标记数的限制。已尝试：%(attempted)s，最大值：%(maximum)s"
 
 #, python-format
 msgid "The location %(location)s already exists"
@@ -1855,7 +1855,7 @@ msgstr ""
 msgid ""
 "The path to the sqlite file database that will be used for image cache "
 "management."
-msgstr "将用于映像高速缓存管理的 sqlite 文件数据库的路径。"
+msgstr "将用于镜像高速缓存管理的 sqlite 文件数据库的路径。"
 
 msgid ""
 "The period of time, in seconds, that the API server will wait for a registry "
@@ -1880,7 +1880,7 @@ msgid "The provided body %(body)s is invalid under given schema: %(schema)s"
 msgstr "所提供的主体 %(body)s 在所给定的模式 %(schema)s 下无效"
 
 msgid "The provided image is too large."
-msgstr "提供的映像太大。"
+msgstr "提供的镜像太大。"
 
 #, python-format
 msgid "The provided path '%(path)s' is invalid: %(explanation)s"
@@ -1889,7 +1889,7 @@ msgstr "所提供的路径“%(path)s”无效：%(explanation)s"
 msgid ""
 "The reference to the default swift account/backing store parameters to use "
 "for adding new images."
-msgstr "对用于添加新映像的缺省 swift 帐户/备份存储器参数的引用。 "
+msgstr "对用于添加新镜像的缺省 swift 帐户/备份存储器参数的引用。 "
 
 msgid ""
 "The region for the authentication service. If \"use_user_token\" is not in "
@@ -1947,7 +1947,7 @@ msgstr ""
 
 msgid ""
 "The requested image has been deactivated. Image data download is forbidden."
-msgstr "所请求映像已取消激活。已禁止下载映像数据。"
+msgstr "所请求镜像已取消激活。已禁止下载镜像数据。"
 
 msgid "The result of current task, JSON blob"
 msgstr "当前任务 JSON blob 的结果"
@@ -1985,15 +1985,15 @@ msgstr "找不到指定的资源类型 %s"
 msgid ""
 "The status of deleted image location can only be set to 'pending_delete' or "
 "'deleted'"
-msgstr "已删除映像位置的状态只能设置为“pending_delete”或“deleted”"
+msgstr "已删除镜像位置的状态只能设置为“pending_delete”或“deleted”"
 
 msgid ""
 "The status of deleted image location can only be set to 'pending_delete' or "
 "'deleted'."
-msgstr "已删除映像位置的状态只能设置为“pending_delete”或“deleted”。"
+msgstr "已删除镜像位置的状态只能设置为“pending_delete”或“deleted”。"
 
 msgid "The status of this image member"
-msgstr "此映像成员的状态"
+msgstr "此镜像成员的状态"
 
 msgid ""
 "The store names to use to get store preference order. The name must be "
@@ -2003,7 +2003,7 @@ msgid ""
 msgstr ""
 "要用于获取存储首选顺序的存储器名称。名称必须由“stores”配置选项定义的其中一个"
 "存储器注册。当发生以下情况时，将应用此选项：将“store_type”选项用作"
-"由“location_strategy”配置选项定义的映像位置策略。"
+"由“location_strategy”配置选项定义的镜像位置策略。"
 
 msgid ""
 "The strategy to use for authentication. If \"use_user_token\" is not in "
@@ -2014,7 +2014,7 @@ msgstr "要用于认证的策略。如果“use_user_token”没有生效，那�
 msgid ""
 "The target member %(member_id)s is already associated with image "
 "%(image_id)s."
-msgstr "目标成员 %(member_id)s 已关联映像 %(image_id)s。"
+msgstr "目标成员 %(member_id)s 已关联镜像 %(image_id)s。"
 
 msgid ""
 "The tenant name of the administrative user. If \"use_user_token\" is not in "
@@ -2033,7 +2033,7 @@ msgid ""
 "which pruner, if running, starts cleaning the images cache."
 msgstr ""
 "上限（累计高速缓存的最大大小，以字节计），当超过该值时，修剪程序（如果正在运"
-"行）会开始清除映像高速缓存。"
+"行）会开始清除镜像高速缓存。"
 
 msgid "The user friendly name for the namespace. Used by UI if available."
 msgstr "名称空间的用户友好名称。由 UI 使用（如果可用）。"
@@ -2093,14 +2093,14 @@ msgstr ""
 "自动删除。"
 
 msgid "This operation is currently not permitted on Glance images details."
-msgstr "当前不允许对 Glance 映像详细信息执行此操作。"
+msgstr "当前不允许对 Glance 镜像详细信息执行此操作。"
 
 msgid ""
 "This value sets what strategy will be used to determine the image location "
 "order. Currently two strategies are packaged with Glance 'location_order' "
 "and 'store_type'."
 msgstr ""
-"此值设置将使用哪个策略确定映像位置顺序。当前，已用 "
+"此值设置将使用哪个策略确定镜像位置顺序。当前，已用 "
 "Glance“location_order”和“store_type”封装两个策略。"
 
 msgid ""
@@ -2118,7 +2118,7 @@ msgstr "位置太多"
 
 #, python-format
 msgid "Total size is %(size)d bytes across %(img_count)d images"
-msgstr "总大小为 %(size)d 字节（在 %(img_count)d 个映像上）"
+msgstr "总大小为 %(size)d 字节（在 %(img_count)d 个镜像上）"
 
 msgid "Turn on/off delayed delete."
 msgstr "请打开/关闭延迟删除。"
@@ -2137,7 +2137,7 @@ msgstr ""
 "案，类似于以下：swift+http://user:pass@authurl.com/v1/container/obj"
 
 msgid "URL to access the image file kept in external store (READ-ONLY)"
-msgstr "用于访问外部存储器中保留的映像文件的 URL（只读）"
+msgstr "用于访问外部存储器中保留的镜像文件的 URL（只读）"
 
 #, python-format
 msgid ""
@@ -2160,7 +2160,7 @@ msgid "Unable to find '%s' in JSON Schema change"
 msgstr "在 JSON 模式更改中找不到“%s”"
 
 msgid "Unable to get legacy image"
-msgstr "无法获取旧映像"
+msgstr "无法获取旧镜像"
 
 msgid "Unable to increase file descriptor limit.  Running as non-root?"
 msgstr "无法增大文件描述符限制。正在以非 root 用户身份运行吗？"
@@ -2204,7 +2204,7 @@ msgid "Unable to upload duplicate image data for image%(image_id)s: %(error)s"
 msgstr "无法为镜像%(image_id)s上传重复的数据: %(error)s"
 
 msgid "Unauthorized image access"
-msgstr "无权访问映像"
+msgstr "无权访问镜像"
 
 #, python-format
 msgid "Unexpected response: %s"
@@ -2253,7 +2253,7 @@ msgid "Version is invalid: %(reason)s"
 msgstr "版本无效：%(reason)s"
 
 msgid "Virtual size of image in bytes (READ-ONLY)"
-msgstr "映像的虚拟大小，以字节计（只读）"
+msgstr "镜像的虚拟大小，以字节计（只读）"
 
 msgid "Visibility must be either \"public\" or \"private\""
 msgstr "可视性必须为“public”或“private”"
@@ -2295,7 +2295,7 @@ msgstr ""
 msgid ""
 "Whether to allow users to specify image properties beyond what the image "
 "schema provides"
-msgstr "是否允许用户指定超出映像模式所提供的内容的映像属性"
+msgstr "是否允许用户指定超出镜像模式所提供的内容的镜像属性"
 
 msgid ""
 "Whether to include the backend image locations in image properties. For "
@@ -2304,7 +2304,7 @@ msgid ""
 "storage location can be a security risk, so use this setting with caution!  "
 "The overrides show_image_direct_url."
 msgstr ""
-"是否将后端映像位置包含在映像属性中。例如，如果使用文件系统存储器，那"
+"是否将后端镜像位置包含在镜像属性中。例如，如果使用文件系统存储器，那"
 "么“file:///path/to/image”的 URL 将在“direct_url”元数据字段中返回给用户。公开"
 "存储位置会造成安全风险，因此请谨慎使用此设置！覆盖 show_image_direct_url。"
 
@@ -2313,7 +2313,7 @@ msgid ""
 "Revealing storage location can be a security risk, so use this setting with "
 "caution!"
 msgstr ""
-"是否将后端映像存储位置包括在映像属性中。显示存储位置会造成安全风险，因此请谨"
+"是否将后端镜像存储位置包括在镜像属性中。显示存储位置会造成安全风险，因此请谨"
 "慎使用此设置！"
 
 msgid ""
@@ -2344,12 +2344,12 @@ msgid ""
 "should do them based on the worst case scenario and be prepared to act in "
 "case they were wrong."
 msgstr ""
-"用于异步任务操作的工作目录。此处设置的目录将用来对映像进行操作 - 通常在它们导"
+"用于异步任务操作的工作目录。此处设置的目录将用来对镜像进行操作 - 通常在它们导"
 "入到目标存储器中之前。当提供工作目录时，请确保提供足够空间，以便并发任务高效"
 "运行而不出现空间不足的情况。通过将“max_workers”数 - 或正在运行的工作程序数 - "
-"乘以平均映像大小（例如 500MB）来进行粗略估算。可根据部署中的平均大小进行映像"
+"乘以平均镜像大小（例如 500MB）来进行粗略估算。可根据部署中的平均大小进行镜像"
 "大小估算。请注意，根据正在运行的任务，您可能需要将此数字乘以某个因子（它取决"
-"于任务执行的操作）。例如，如果已启用映像转换，那么可能希望使可用大小加倍。综"
+"于任务执行的操作）。例如，如果已启用镜像转换，那么可能希望使可用大小加倍。综"
 "上所述，请记住这些仅是估算，并且您应该根据最差情况完成这些估算，并且准备好应"
 "对估算错误的情况。"
 
@@ -2368,11 +2368,11 @@ msgid "You are not permitted to create a tag in the namespace owned by '%s'"
 msgstr "不允许在由“%s”拥有的名称空间中创建标记"
 
 msgid "You are not permitted to create image members for the image."
-msgstr "不允许为映像创建映像成员。"
+msgstr "不允许为镜像创建镜像成员。"
 
 #, python-format
 msgid "You are not permitted to create images owned by '%s'."
-msgstr "不允许创建由“%s”拥有的映像。"
+msgstr "不允许创建由“%s”拥有的镜像。"
 
 #, python-format
 msgid "You are not permitted to create namespace owned by '%s'"
@@ -2395,7 +2395,7 @@ msgid "You are not permitted to create this task with owner as: %s"
 msgstr "不允许采用以下身份作为所有者来创建此任务：%s"
 
 msgid "You are not permitted to delete this image."
-msgstr "不允许删除此映像。"
+msgstr "不允许删除此镜像。"
 
 msgid "You are not permitted to delete this meta_resource_type."
 msgstr "你不被允许删除meta_resource_type。"
@@ -2418,16 +2418,16 @@ msgstr "不允许对此 %(resource)s 修改“%(attr)s”。"
 
 #, python-format
 msgid "You are not permitted to modify '%s' on this image."
-msgstr "不允许对此映像修改“%s”。"
+msgstr "不允许对此镜像修改“%s”。"
 
 msgid "You are not permitted to modify locations for this image."
-msgstr "不允许为此映像修改位置。"
+msgstr "不允许为此镜像修改位置。"
 
 msgid "You are not permitted to modify tags on this image."
-msgstr "不允许对此映像修改标记。"
+msgstr "不允许对此镜像修改标记。"
 
 msgid "You are not permitted to modify this image."
-msgstr "不允许修改此映像。"
+msgstr "不允许修改此镜像。"
 
 msgid "You are not permitted to set status on this task."
 msgstr "你不被允许设置这个任务的状态。"
@@ -2445,26 +2445,26 @@ msgid "You are not permitted to update this tag."
 msgstr "不允许更新此标记。"
 
 msgid "You are not permitted to upload data for this image."
-msgstr "不允许为此映像上载数据。"
+msgstr "不允许为此镜像上载数据。"
 
 #, python-format
 msgid "You cannot add image member for %s"
-msgstr "无法为 %s 添加映像成员"
+msgstr "无法为 %s 添加镜像成员"
 
 #, python-format
 msgid "You cannot delete image member for %s"
-msgstr "无法为 %s 删除映像成员"
+msgstr "无法为 %s 删除镜像成员"
 
 #, python-format
 msgid "You cannot get image member for %s"
-msgstr "无法为 %s 获取映像成员"
+msgstr "无法为 %s 获取镜像成员"
 
 #, python-format
 msgid "You cannot update image member %s"
-msgstr "无法更新映像成员 %s"
+msgstr "无法更新镜像成员 %s"
 
 msgid "You do not own this image"
-msgstr "您未拥有此映像"
+msgstr "您未拥有此镜像"
 
 msgid ""
 "You have selected to use SSL in connecting, and you have supplied a cert, "
@@ -2521,7 +2521,7 @@ msgid "location: %s data lost"
 msgstr "位置：%s 数据已丢失"
 
 msgid "md5 hash of image contents. (READ-ONLY)"
-msgstr "映像内容的 md5 散列。（只读）"
+msgstr "镜像内容的 md5 散列。（只读）"
 
 #, python-format
 msgid "new_image() got unexpected keywords %s"
